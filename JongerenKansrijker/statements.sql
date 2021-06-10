@@ -2,6 +2,14 @@ CREATE DATABASE JongerenKansrijker;
 
 USE JongerenKansrijker;
 
+CREATE TABLE medewerker (
+    medewerkercode INT(11) NOT NULL,
+    roepnaam VARCHAR(20) NOT NULL,
+    tussenvoegsel VARCHAR(7) NOT NULL,
+    achternaam VARCHAR(25) NOT NULL,
+    PRIMARY KEY (medewerkercode) 
+);
+
 CREATE TABLE activiteit (
     activiteitcode INT(11) NOT NULL,
     activiteit VARCHAR(3) NOT NULL,
